@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Apoorva N. Mahesh</title>
+<style>
+body {
+  background-color: AliceBlue;
+}
+div.tab {
+  overflow: hidden;
+  border: 1px solid #ccc
+  background-color: DarkBlue;
+}
+div.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition; 0.3;
+  font-family: garamond;
+  font-size: 17px;
+}
+div.tab button:hover {
+  background-color: CornflowerBlue;
+}
+div.tab button.active {
+  background-color: CornflowerBlue;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid CornflowerBlue;
+  border-top: none;
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+p {
+  font-family:garamond;
+  font-size: 20px;
+  color: black;
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+<h1>Apoorva N. Mahesh</h1>
+<p>Click on the buttons inside the tabbed menu to learn more about me and explore some of my work as a coder!</p>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Thoughts')">Thoughts</button>
+  <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
+  <button class="tablinks" onclick="openCity(event, 'Portfolio')">Portfolio</button>
+</div>
+
+<div id="Thoughts" class="tabcontent">
+  <h3>June 30, 2017</h3>
+  <p>Today marks the creation of my website! Thank you to those who helped me and provided me with the resources to make this happen. I know it's a bit unfamiliar to be so passionate about something of which there are millions in the world, but I only recently discovered how much work one has to put in to coding a website. I now have loads of respect towards every web designer out there. This is also, technically, my first project! How incredible...maybe I should put a link to this in my "Portfolio" tab (I'm not joking about that!) I appreciate your visit to this site and hope that today will mark the first of many more.</p>
+  <h3>July 5, 2017</h3>
+  <p>Well, today I am presenting my new website to the rest of my class, and instead of making in cool and techy, I'm writing this. I'm secretly hoping that the more content I have written, the less boring the overall website witll look compared to that of others. Actually, I'm very proud of the work I have done so far, and just wanted to throw that out there. My advice to everyone, whether you're coding or not, is to never take shame in the work in which you poured your heart and soul; even if it means nothing to everyone else, it is something you accomplished. Loving the corniness, huh? Well, it's true...and even those of you rolling your eyes will come back searching for this quote someday when you feel like you've accomplished nothing and feel at your wits end. Don't worry, I'll still be here.<p>
+  <h3>July 14, 2017</h3>
+  <p>Wow, it's been a while, hasn't it? Maybe not for you, but for me, it has. I'm currently working on trying to get this website modified and up to date. This means uploading my resumé and finally updating my portfolio with the projects I've been coding this past summer. Once I finish with that, it's time to tweak the code a little and jazz this site up a little! Since I built it from scratch, my main priority when I began coding was to get the overall structure the way I wanted it, then put any information I thought was necessary for networking, and, once all of that was finished, I could finally put some effort into looks rather than functionality. It may take some time, but be on the lookout for any resources and projects I post. Until next time, Apoorva.<p>
+</div>
+
+<div id="Experience" class="tabcontent">
+  <h3>Education:</h3>
+  <p>I am currently a senior at Metea Valley High school in the Illinois school district IPSD204. I am an ambitious student who is involved in a multitude of AP and Honors courses and has a passion for education. Some highlights of projects I have been involved in are the Autonomous Vehicle Challenge through the Rose-Hulman Institute of Technology in Terre Haute, Indiana (some would call it Terre-dise!) and the Girls Who Code Summer Immersion Program at Synchrony Financial, both of which have made me even more confident in someday pursuing a career in Computer Science. However, the Humanities are an area of study that I believe is incredibly important to our society and future successes. After all, the very foundation of education is based on the questioning of old ideas and presenting the basis for new ones. It is because of this that I encourage and practice research, writing, and public speaking skills through my positions and activities in school. Hopefully, by your next visit, I should have my resume uploading with more information about my education and experience.</p>
+</div>
+
+<div id="Portfolio" class="tabcontent">
+  <h3>Recent Work:</h3>
+  <p>Below are some projects I have been working on recently. Come back soon, more work is to come! </p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+<p>Hello and welcome to my personal webiste! My name is Apoorva Mahesh, and I am currently a student in high school. I recently began coding through Girls Who Code, and overall, am pretty new to computer science. However, in the time I have spent learning, I have enjoyed it every step of the way. My objective, as of now, is to attend a four-year university with majors in Computer Science and Graphic Design and a minor in Political Science. I am currently working towards someday working in the television and movie industry, creating CGI and visual effects for the TV shows and films we see every day and admire. Obviously, I am far from that stage in life, and it is necessary to take life one day at a time.</p>
+<p>This website is here to inform you about my background as a coder, as well as to give anyone helpful tips or advice about their journey into the technology sector of the workforce, whether young or old. Ahead, you will see some resources I found helpful in my journey, some writings of personal experience and advice, a little bit about me as a person, as well as my background experience. Most importantly, you will find a portfolio of projects I have enjoyed working on. Hopefully, it may give you some inspiration for any future projects to begin! Enjoy, and feel free to contact me. The links to my email, GitHub, and BitBucket are all available above on the home screen.</p>
+
+</body>
+</html>
