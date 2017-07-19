@@ -8,16 +8,24 @@
       <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-      <div>
-          <h1><a href="/">Apoorva's Blog</a></h1>
-      </div>
-
-      {% for post in posts %}
-          <div>
-              <p>published: {{ post.published_date }}</p>
-              <h1><a href="">{{ post.title }}</a></h1>
-              <p>{{ post.text|linebreaksbr }}</p> <!-- \linebreaksbr is piping the post' text through a filter to convert line-breaks into paragraphs!>>-->
+          <div class="page-header">
+              <h1><a href="/">Apoorva's Blog</a></h1>
           </div>
-      {% endfor %}
+
+          <div class="content container">
+              <div class="row">
+                  <div class="col-md-8">
+                      {% for post in posts %}
+                          <div class="post">
+                              <div class="date">
+                                  <p>published: {{ post.published_date }}</p>
+                              </div>
+                              <h1><a href="">{{ post.title }}</a></h1>
+                              <p>{{ post.text|linebreaksbr }}</p>
+                          </div>
+                      {% endfor %}
+                  </div>
+              </div>
+          </div>
     </body>
 </html>
