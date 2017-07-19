@@ -1,5 +1,7 @@
 <html>
     <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <title>Apoorva's Blog</title>
     </head>
     <body>
@@ -14,11 +16,5 @@
               <p>{{ post.text|linebreaksbr }}</p> <!-- \linebreaksbr is piping the post' text through a filter to convert line-breaks into paragraphs!>>-->
           </div>
       {% endfor %}
-
-        <div>
-            <p>Published: 18.07.2017, 12:14</p>
-            <h2><a href="">Another Post II</a></h2>
-            <p>Hello darkness my old friend.</p>
-        </div>
     </body>
 </html>
