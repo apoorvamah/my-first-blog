@@ -3,15 +3,17 @@
         <title>Apoorva's Blog</title>
     </head>
     <body>
-        <div>
-            <h1><a href="">Apoorva's Blog</a></h1>
-        </div>
+      <div>
+          <h1><a href="/">Apoorva's Blog</a></h1>
+      </div>
 
-        <div>
-            <p>Published: 18.07.2017, 15:12:43</p>
-            <h2><a href="">New Post</a></h2>
-            <p>Making this just cuz.</p>
-        </div>
+      {% for post in posts %}
+          <div>
+              <p>published: {{ post.published_date }}</p>
+              <h1><a href="">{{ post.title }}</a></h1>
+              <p>{{ post.text|linebreaksbr }}</p> <!-- \linebreaksbr is piping the post' text through a filter to convert line-breaks into paragraphs!>>-->
+          </div>
+      {% endfor %}
 
         <div>
             <p>Published: 18.07.2017, 12:14</p>
